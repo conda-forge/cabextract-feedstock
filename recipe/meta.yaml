@@ -3,7 +3,7 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://www.cabextract.org.uk/{{ name }}-{{ version }}.tar.gz
