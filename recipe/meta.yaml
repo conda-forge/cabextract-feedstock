@@ -1,5 +1,5 @@
 {% set name = "cabextract" %}
-{% set version = "1.9.1" %}
+{% set version = "1.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,15 +7,16 @@ package:
 
 source:
   url: https://www.cabextract.org.uk/{{ name }}-{{ version }}.tar.gz
-  sha256: afc253673c8ef316b4d5c29cc4aa8445844bee14afffbe092ee9469405851ca7
+  sha256: b5546db1155e4c718ff3d4b278573604f30dd64c3c5bfd4657cd089b823a3ac6
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
 
 test:
   commands:
