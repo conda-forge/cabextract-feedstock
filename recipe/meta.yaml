@@ -10,7 +10,7 @@ source:
   sha256: b5546db1155e4c718ff3d4b278573604f30dd64c3c5bfd4657cd089b823a3ac6
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -25,9 +25,9 @@ test:
 
 about:
   home: https://www.cabextract.org.uk
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_family: GPL
-  license_file: COPYING
+  license_file: LICENSE.txt
   summary: 'Free Software for extracting Microsoft cabinet files'
 
   description: |
