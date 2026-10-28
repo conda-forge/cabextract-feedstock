@@ -1,0 +1,44 @@
+schema_version: 1
+
+context:
+  name: cabextract
+  version: "1.11"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://www.cabextract.org.uk/${{ name }}-${{ version }}.tar.gz
+  sha256: b5546db1155e4c718ff3d4b278573604f30dd64c3c5bfd4657cd089b823a3ac6
+
+build:
+  number: 2
+  skip: win
+
+requirements:
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+    - make
+
+tests:
+  - script:
+      - cabextract -v
+
+about:
+  license: GPL-3.0-or-later
+  license_file: LICENSE.txt
+  summary: Free Software for extracting Microsoft cabinet files
+  description: |
+    cabextract is Free Software for extracting Microsoft cabinet
+    files, also called .CAB files. It is distributed under the
+    GNU GPL license and is based on the portable LGPL libmspack
+    library.
+  homepage: https://www.cabextract.org.uk
+  repository: https://www.cabextract.org.uk
+  documentation: https://www.cabextract.org.uk
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
