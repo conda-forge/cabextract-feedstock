@@ -3,21 +3,20 @@ About cabextract-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cabextract-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.cabextract.org.uk
+Home: https://www.cabextract.org.uk/
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
 Summary: Free Software for extracting Microsoft cabinet files
 
-Development: https://www.cabextract.org.uk
+Development: https://www.cabextract.org.uk/
 
-Documentation: https://www.cabextract.org.uk
+Documentation: https://www.cabextract.org.uk/
 
 cabextract is Free Software for extracting Microsoft cabinet
 files, also called .CAB files. It is distributed under the
 GNU GPL license and is based on the portable LGPL libmspack
 library.
-
 
 Current build status
 ====================
@@ -223,10 +222,4 @@ Feedstock Maintainers
 =====================
 
 * [@jan-janssen](https://github.com/jan-janssen/)
-
-
-<!-- dummy commit to enable rerendering -->
-
-
-<!-- dummy commit to enable rerendering -->
 
